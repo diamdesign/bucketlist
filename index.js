@@ -41,7 +41,7 @@ h2.innerText = "Fredrik";
 const sub = document.querySelector(".list-desc em");
 sub.innerText = "Things to do in life.";
 
-const newNode = document.createTextNode("Living water.");
+const newNode = document.createTextNode("Living abundantly.");
 const newNode2 = document.createTextNode("God knows.");
 console.log(list);
 list.replaceChild(newNode, list.children[0]);
