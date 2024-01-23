@@ -41,10 +41,14 @@ h2.innerText = "Fredrik";
 const sub = document.querySelector(".list-desc em");
 sub.innerText = "Things to do in life.";
 
-const newNode = document.createTextNode("Living abundantly.");
-const newNode2 = document.createTextNode("God knows.");
+const paragraph6 = document.createElement("p");
+const paragraphText6 = (paragraph6.innerText = "Living abundantly.");
+const paragraph7 = document.createElement("p");
+const paragraphText7 = (paragraph7.innerText = "God knows.");
+console.log(paragraph7);
+
 console.log(list);
-list.replaceChild(newNode, list.children[0]);
-list.replaceChild(newNode2, list.children[3]);
+list.replaceChild(paragraph6, list.children[0]);
+list.replaceChild(paragraph7, list.children[3]);
 
 list.lastElementChild.remove();
